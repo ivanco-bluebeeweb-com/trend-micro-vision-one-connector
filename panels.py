@@ -36,18 +36,18 @@ async def trend_micro_sidebar(ctx, **kwargs) -> ui.UINode:
         return ui.Stack(direction="v", gap=3, align="stretch", children=[
             ui.Button("Где взять Authentication Token?", variant="ghost", size="sm", icon="HelpCircle",
                       on_click=ui.Call("__panel__trend_micro_connect_help")),
-            ui.Form(action="connect_trend_micro", submit_label="Подключить тенант", full_width=True, children=[
+            ui.Form(action="connect_trend_micro", submit_label="Подключить тенант", children=[
                 ui.Stack(direction="v", gap=1, align="stretch", children=[
                     ui.Text("Название (опционально)", variant="label"),
-                    ui.Input(name="label", placeholder="Acme SOC Tenant"),
+                    ui.Input(param_name="label", placeholder="Acme SOC Tenant"),
                 ]),
                 ui.Stack(direction="v", gap=1, align="stretch", children=[
                     ui.Text("Регион", variant="label"),
-                    ui.Select(name="region", placeholder="Выберите регион", options=_REGIONS),
+                    ui.Select(param_name="region", placeholder="Выберите регион", options=_REGIONS),
                 ]),
                 ui.Stack(direction="v", gap=1, align="stretch", children=[
                     ui.Text("Authentication Token", variant="label"),
-                    ui.Input(name="api_token", type="password", placeholder="Вставьте Authentication Token"),
+                    ui.Password(param_name="api_token", placeholder="Вставьте Authentication Token"),
                 ]),
             ]),
         ])
@@ -71,7 +71,7 @@ async def trend_micro_sidebar(ctx, **kwargs) -> ui.UINode:
 
 @ext.panel("trend_micro_connect_help", slot="overlay", title="Где взять Authentication Token?")
 async def trend_micro_connect_help(ctx, **kwargs) -> ui.UINode:
-    return ui.Markdown(text=(
+    return ui.Markdown(content=(
         "**Как получить Authentication Token Trend Micro Vision One:**\n\n"
         "1. Откройте консоль Vision One вашего тенанта.\n"
         "2. Перейдите в **Administration > API Keys**.\n"

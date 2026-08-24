@@ -13,13 +13,13 @@ import trend_micro_client as tm
 
 def _severity_badge(level: str) -> ui.UINode:
     s = (level or "").lower()
-    variant = "error" if s == "critical" else ("warning" if s in ("high", "medium") else "default")
-    return ui.Badge(text=level or "unknown", variant=variant)
+    color = "red" if s == "critical" else ("yellow" if s in ("high", "medium") else "gray")
+    return ui.Badge(label=level or "unknown", color=color)
 
 
 def _scan_action_badge(action: str) -> ui.UINode:
     s = (action or "").lower()
-    return ui.Badge(text=action or "log", variant="error" if s == "block" else "default")
+    return ui.Badge(label=action or "log", color="red" if s == "block" else "gray")
 
 
 @ext.panel("trend_micro_workbench", slot="center", title="Workbench", center_overlay=True)
