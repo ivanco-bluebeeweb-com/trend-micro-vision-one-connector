@@ -1,0 +1,18 @@
+{
+  "connect_trend_micro": 0,
+  "disconnect_trend_micro": 0,
+  "list_connections": 0,
+  "list_endpoints": 8,
+  "list_workbench_alerts": 8,
+  "get_workbench_alert": 8,
+  "list_suspicious_objects": 8,
+  "list_attack_techniques": 8,
+  "isolate_endpoint": 16,
+  "restore_endpoint": 16,
+  "update_workbench_alert": 16,
+  "create_suspicious_object": 16,
+  "remove_suspicious_object": 16,
+  "scan_endpoint": 20,
+  "run_search_query": 20,
+  "audit_trend_micro_tenant": 40
+}
