@@ -1,6 +1,6 @@
 {
   "manifest_schema_version": 3,
-  "sdk_version": "5.11.0",
+  "sdk_version": "5.13.0",
   "app_id": "trend-micro-vision-one-connector",
   "version": "0.1.0",
   "name": "Trend Micro Vision One",
@@ -137,7 +137,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "list_connections",
@@ -330,7 +330,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "disconnect_trend_micro",
@@ -443,7 +443,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "list_workbench_alerts",
@@ -666,7 +666,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "get_workbench_alert",
@@ -796,7 +796,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "update_workbench_alert",
@@ -940,7 +940,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "list_endpoints",
@@ -1164,7 +1164,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "isolate_endpoint",
@@ -1289,7 +1289,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "restore_endpoint",
@@ -1414,7 +1414,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "scan_endpoint",
@@ -1539,7 +1539,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "list_suspicious_objects",
@@ -1757,7 +1757,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "create_suspicious_object",
@@ -1902,7 +1902,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "remove_suspicious_object",
@@ -2027,7 +2027,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "list_attack_techniques",
@@ -2251,7 +2251,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "run_search_query",
@@ -2469,7 +2469,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     },
     {
       "name": "audit_trend_micro_tenant",
@@ -2692,7 +2692,7 @@
       "background": false,
       "long_running": false,
       "scopes": [],
-      "owner_chat_tool": "tool_trend-micro-vision-one-connector_chat"
+      "owner_chat_tool": "trend_micro"
     }
   ],
   "signals": [],

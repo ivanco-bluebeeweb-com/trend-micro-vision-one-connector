@@ -50,7 +50,16 @@ ext = Extension(
     system=False,
 )
 
-chat = ChatExtension(ext)
+chat = ChatExtension(
+    ext,
+    tool_name="trend_micro",
+    description=(
+        "Trend Micro Vision One Connector -- connect your own Trend Micro "
+        "Vision One tenant via API key, then work the Workbench risk items, "
+        "Endpoints, Suspicious Objects and Observed Attack Techniques, run "
+        "searches, and audit tenant health."
+    ),
+)
 
 
 @ext.health_check
