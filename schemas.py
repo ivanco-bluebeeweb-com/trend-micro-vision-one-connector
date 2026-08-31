@@ -31,6 +31,8 @@ class ProviderConnection(sdl.Entity):
 
 
 class ProviderConnectionList(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[ProviderConnection] = []
 
 
@@ -39,6 +41,8 @@ class DisconnectTrendMicroParams(BaseModel):
 
 
 class DeleteResult(sdl.Entity):
+    id: str = ""
+    title: str = ""
     deleted: bool = False
 
 
@@ -51,6 +55,8 @@ class ListWorkbenchAlertsParams(BaseModel):
 
 
 class WorkbenchAlert(sdl.Entity):
+    id: str = ""
+    title: str = ""
     alert_id: str = ""
     model: str = ""
     severity: str = ""
@@ -60,6 +66,8 @@ class WorkbenchAlert(sdl.Entity):
 
 
 class WorkbenchAlertList(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[WorkbenchAlert] = []
 
 
@@ -83,6 +91,8 @@ class ListEndpointsParams(BaseModel):
 
 
 class TrendMicroEndpoint(sdl.Entity):
+    id: str = ""
+    title: str = ""
     agent_guid: str = ""
     endpoint_name: str = ""
     os_name: str = ""
@@ -91,6 +101,8 @@ class TrendMicroEndpoint(sdl.Entity):
 
 
 class EndpointList(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[TrendMicroEndpoint] = []
 
 
@@ -113,6 +125,8 @@ class ScanEndpointParams(BaseModel):
 
 
 class TaskRef(sdl.Entity):
+    id: str = ""
+    title: str = ""
     task_id: str = ""
 
 
@@ -125,6 +139,8 @@ class ListSuspiciousObjectsParams(BaseModel):
 
 
 class SuspiciousObject(sdl.Entity):
+    id: str = ""
+    title: str = ""
     value: str = ""
     obj_type: str = ""
     scan_action: str = ""
@@ -133,6 +149,8 @@ class SuspiciousObject(sdl.Entity):
 
 
 class SuspiciousObjectList(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[SuspiciousObject] = []
 
 
@@ -158,6 +176,8 @@ class ListObservedAttackTechniquesParams(BaseModel):
 
 
 class ObservedAttackTechnique(sdl.Entity):
+    id: str = ""
+    title: str = ""
     technique_id: str = ""
     technique_name: str = ""
     tactic: str = ""
@@ -166,6 +186,8 @@ class ObservedAttackTechnique(sdl.Entity):
 
 
 class ObservedAttackTechniqueList(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[ObservedAttackTechnique] = []
 
 
@@ -179,10 +201,14 @@ class RunSearchQueryParams(BaseModel):
 
 
 class SearchResultRow(sdl.Entity):
+    id: str = ""
+    title: str = ""
     fields_json: str = ""
 
 
 class SearchResult(sdl.Entity):
+    id: str = ""
+    title: str = ""
     items: list[SearchResultRow] = []
 
 
@@ -193,12 +219,16 @@ class AuditTrendMicroTenantParams(BaseModel):
 
 
 class AuditFinding(sdl.Entity):
+    id: str = ""
+    title: str = ""
     kind: str = ""
     detail: str = ""
     severity: str = ""
 
 
 class AuditReport(sdl.Entity):
+    id: str = ""
+    title: str = ""
     connection_id: str = ""
     open_alerts: int = 0
     critical_high_alerts: int = 0
