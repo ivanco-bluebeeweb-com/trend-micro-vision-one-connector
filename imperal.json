@@ -2768,5 +2768,15 @@
       "refresh": "manual",
       "center_overlay": true
     }
+  ],
+  "secrets": [
+    {
+      "name": "trend_micro_connections",
+      "description": "JSON array of connected Trend Micro accounts/credentials. Managed by the app's connect/disconnect tools.",
+      "required": false,
+      "write_mode": "both",
+      "max_bytes": 16384,
+      "scope": "user"
+    }
   ]
 }
